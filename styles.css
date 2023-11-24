@@ -93,6 +93,7 @@ section {
 }
 
 
+
 /* contacto.css */
 
 .formulario-contacto {
@@ -176,6 +177,7 @@ section {
     justify-content: space-around;
 }
 
+
 /* servicios.css */
 
 .tipos-de-servicios {
@@ -214,6 +216,8 @@ section {
 .tipo-servicio li {
     margin-bottom: 8px;
 }
+
+
 /* Carrucel */ 
 
 .carrusel {
@@ -258,4 +262,55 @@ img {
 
 .siguiente {
     right: 0;
+}
+
+
+/* Galería */ 
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    height: 70%;
+    max-height: 600px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-contenido {
+    margin: 0%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cerrar {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.imagen-galeria {
+    position: relative;
+    cursor: pointer;
+}
+
+.imagen-galeria img {
+    width: 100%;
+    height: auto;
 }

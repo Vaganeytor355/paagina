@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenidad Vital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="Masajes.Logo.png" alt="Logo de Masajes Mar">
+        </div>
+        <div id="marca">
+            <h1>Serenidad Vital</h1>
+        </div>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html" class="active">Galería</a></li>
+          <li><a href="carrucel.html">Carrucel</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+
+
+  <section class="galeria">
+    <div class="imagen-galeria" onclick="abrirModal('masaje_aromaterapia.jpg', 'Descripción 1')">
+        <img src="masaje_aromaterapia.jpg" alt="Imagen 1">
+    </div>
+    <div class="imagen-galeria" onclick="abrirModal('masaje_deportivo.jpg', 'Descripción 2')">
+        <img src="masaje_deportivo.jpg" alt="Imagen 2">
+    </div>
+    <div class="imagen-galeria" onclick="abrirModal('masaje_reflexologia.jpg', 'Descripción 3')">
+        <img src="masaje_reflexologia.jpg" alt="Imagen 3">
+    </div>
+    <div class="imagen-galeria" onclick="abrirModal('masaje_shiatsu.jpg', 'Descripción 4')">
+        <img src="masaje_shiatsu.jpg" alt="Imagen 4">
+    </div>
+    <div class="imagen-galeria" onclick="abrirModal('masaje_tailandes.jpg', 'Descripción 5')">
+        <img src="masaje_tailandes.jpg" alt="Imagen 5">
+    </div>
+    <div class="imagen-galeria" onclick="abrirModal('masajes2.jpg', 'Descripción 6')">
+        <img src="masajes2.jpg" alt="Imagen 6">
+    </div>
+   
+</section>
+
+<div id="modal" class="modal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img id="imagenModal" class="modal-contenido">
+    <div id="descripcionModal"></div>
+</div>
+
+
+  <script src="galeria.js"></script>
+</body>
+</html>

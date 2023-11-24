@@ -1,3 +1,4 @@
+// Carrucel
 let slideIndex = 0;
 
 function mostrarSlide(index) {
@@ -28,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
         cambiarSlide(1);
     }, 3000);
 });
+

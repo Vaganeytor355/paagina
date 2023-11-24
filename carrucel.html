@@ -17,23 +17,32 @@
     </header>
     <nav>
       <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="acerca.html">Acerca de nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="galeria.html">Galería</a></li>
-          <li><a href="carrucel.html">Carrucel</a></li>
+          <li><a href="carrucel.html" class="active">Carrucel</a></li>
           <li><a href="contacto.html">Contacto</a></li>
       </ul>
   </nav>
-    <section>
-        <div class="presentacion">
-            <h2>Serenidad Vital</h2>
-            <p>Descubre la armonía y bienestar a través de nuestros servicios de masajes especializados.</p>
-            <a href="servicios.html" class="boton">Explorar Servicios</a>
-        </div>
-        <div class="imagen-presentacion">
-            <img src="Masajes.jpg" alt="Imagen representativa de masajes">
-        </div>
-    </section>
+
+    <section class="carrusel">
+      <div class="carrusel-container">
+          <div class="slide fade">
+              <img src="masajes1.jpg" alt="Imagen 1">
+          </div>
+          <div class="slide fade">
+              <img src="masajes2.jpg" alt="Imagen 2">
+          </div>
+          <div class="slide fade">
+              <img src="masajes3.jpg" alt="Imagen 3">
+          </div>
+      </div>
+      <a class="anterior" onclick="cambiarSlide(-1)">&#10094;</a>
+      <a class="siguiente" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+
+  <script src="carrucel.js"></script>
+
 </body>
 </html>
