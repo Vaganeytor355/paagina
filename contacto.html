@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Serenidad Vital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="Masajes.Logo.png" alt="Logo de Serenidad Vital">
+        </div>
+        <div id="marca">
+            <h1>Serenidad Vital</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="presentacion">
+            <h2>Contacto</h2>
+            <p>¡Estamos aquí para responder tus preguntas y ayudarte en lo que necesites! Completa el formulario o utiliza la información de contacto a continuación.</p>
+        </div>    
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <section>
+        <div class="formulario-contacto">
+            <form action="https://formspree.io/f/xrgwwgej" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="\d{3}-\d{3}-\d{4}" placeholder="Formato: 341-201-1174">
+
+
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <input type="hidden" name="_replyto" value="valentincostaleprosito@gmail.com">
+                <ul class="botones">
+                    <li><input type="submit" value="Enviar Mensaje"></li>
+                    <li><input type="reset" value="Borrar Formulario" onclick="borrarFormulario()"></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="instagram-feed">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/valen_c_z_" target="_blank" rel="noopener noreferrer">
+                            <img src="instagram.png" alt="Instagram Icon" style="max-width: 90px; display: block; margin-bottom: 10px;">
+                            <span style="display: block;">Síguenos en Instagram: @valen_c_z_</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/valenti96912952" target="_blank" rel="noopener noreferrer"> <img src="X.png" alt="X Icon">
+                            <span style="display: block;">Síguenos en X:@valenti96912952</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <script>
+        function borrarFormulario() {
+            document.getElementById("formulario-contacto").reset();
+        }
+    </script>
+</body>
+</html>

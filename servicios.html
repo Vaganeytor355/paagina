@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Serenidad Vital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="Masajes.Logo.png" alt="Logo de Serenidad Vital">
+        </div>
+        <div id="marca">
+            <h1>Serenidad Vital</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de nosotros</a></li>
+            <li><a href="servicios.html" class="active">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="presentacion">
+            <h2>Nuestros Servicios</h2>
+            <p>Descubre una variedad de servicios diseñados para tu bienestar y relajación. Ofrecemos una experiencia única para cada cliente.</p>
+        </div>
+
+    
+            <div class="tipo-servicio" id="D1">
+                <h3 onclick="toggleDesplegable(D1)">Masajes Relajantes</h3>
+                <ul>
+                    <li>Masaje Sueco</li>
+                    <li>Masaje de Tejido Profundo</li>
+                    <li>Masaje Tailandés</li>
+                    <li>Masaje de Aromaterapia</li>
+                </ul>
+            </div>
+            <br>
+            <div class="tipo-servicio" id="D2">
+                <h3 onclick="toggleDesplegable(D2)">Terapias Específicas</h3>
+                <ul>
+                    <li>Reflexología</li>
+                    <li>Shiatsu</li>
+                    <li>Masaje de Puntos Gatillo</li>
+                    <li>Masaje Deportivo</li>
+                </ul>
+            </div>
+    </section>
+    <script>
+        function toggleDesplegable(elemento) {
+            const lista = elemento.querySelector('ul');
+            lista.style.display = (lista.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
